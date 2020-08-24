@@ -14,37 +14,33 @@
     This web appplication will take in some of your details and use them to accurately give you the name you would have
     been christened if you were born in Ghana. </p>
   <h2>Please input your date of birth and gender</h2>
-  <div>
-    <div id="error"></div>
-    <form id="form">
-      <div id="dob">
-        <label for="dd">DD:</label><br>
-        <input type="number" id="dd" name="dd" placeholder="Date" required><br>
-        <label for="mm">MM:</label><br>
-        <input type="number" id="mm" name="mm" placeholder="Month" required><br>
-        <label for="yyyy">YYYY:</label><br>
-        <input type="number" id="yyyy" name="yyyy" placeholder="Year" required>
+  <div id="error"></div>
+  <form id="form">
+    <div id="dob">
+      <label for="dd">DD:</label>
+      <input type="number" id="dd" name="dd" placeholder="Date" required><br>
+      <label for="mm">MM:</label>
+      <input type="number" id="mm" name="mm" placeholder="Month" required><br>
+      <label for="yyyy">YYYY:</label>
+      <input type="number" id="yyyy" name="yyyy" placeholder="Year" required>
+    </div>
 
-      </div>
-      <div id="sex">
-        <label for="gender">Gender</label><br>
+    <div id="sex">
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="0">Select Gender</option>
+        <option value="1">Female</option>
+        <option value="2">Male</option>
+      </select>
+    </div>
 
-        <select id="gender">
-          <option value="0">Select Gender</option>
-          <option value="1">Female</option>
-          <option value="2">Male</option>
-        </select>
-      </div>
-      <div id="submit">
-        <button type="button" id="btnSubmit" onclick="calculateName()">Get Name</button>
-      </div>
-      <hr />
-      <h3>Results:</h3>
-      <div id="divResult"></div>
-
-    </form>
-  </div>
-
+    <div id="submit">
+      <button type="button" id="btnSubmit" onclick="calculateName()">Generate Name</button>
+    </div>
+    <hr />
+    <h3>Results:</h3>
+    <div id="divResult"></div>
+  </form>
   <script defer src="js/scripts.js"></script>
 </body>
 
