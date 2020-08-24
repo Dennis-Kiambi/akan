@@ -1,4 +1,35 @@
 body{
     background-image: linear-gradient(to bottom right, #fcfafe, #e7d8f7);
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: large;
+}
+p{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#sex, #dd, #mm, #yyyy, #submit{
+    margin-top: 15px;
+
+}
+#dd, #mm, #yyyy{
+    border-radius: 5px;   
+    width: 50%;
+    height: 20px;
+}
+#error{
+    color: red;
+}
+#btnSubmit{
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #bff2f1;
+}
+#sex>select{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+}
+h1{
+    margin-top: 50px;
 }
