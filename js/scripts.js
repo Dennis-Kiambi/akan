@@ -44,7 +44,6 @@ function calculateName() {
         return false;
     }
 
-    errorElement.innerHTML = 'Eevrything Is Ok';
     let maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 
     let femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
@@ -57,7 +56,7 @@ function calculateName() {
     let daysOfTheweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sarturday'];
 
     divResult.innerHTML = 'You were born on <b>' + daysOfTheweek[dob.getDay()] + '</b>'
-        + '<br/> Your Name is <b>' + (gender == 1 ? femaleNames[dob.getDay()] : maleNames[dob.getDay()]) + '</b>';
+        + '<br/> Your Akan Name is <b>' + (gender == 1 ? femaleNames[dob.getDay()] : maleNames[dob.getDay()]) + '</b>';
 
 
 
@@ -66,21 +65,3 @@ function calculateName() {
 
 
 }
-/*
-
-form.addEventListener('submit', (e) => {
-    let messages = []
-    if (dd.value > 31 || dd.value <= 0) {
-        messages.push('Invalid day format')
-    }
-    if (mm.value > 12 || mm.value <= 0) {
-        messages.push('Invalid month format')
-    }
-    if (yyyy.value > 2020) {
-        messages.push('Year cannot be later than 2020')
-    }
-    if (messages.length > 0) {
-        e.preventDefault()
-        errorElement.innerText = messages.join(', ')
-    }
-})*/
