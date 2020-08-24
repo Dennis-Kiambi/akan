@@ -9,6 +9,8 @@
 </tr>
 </table>
 
+## Author
+Dennis Kiambi
 
 ## Demo
 Here is a working live link :  https://dennis-kiambi.github.io/akan/
