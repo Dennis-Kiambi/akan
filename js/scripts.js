@@ -45,6 +45,22 @@ function calculateName() {
     }
 
     errorElement.innerHTML = 'Eevrything Is Ok';
+    let maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+
+    let femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+
+    let dob = new Date(year, month - 1, day);
+
+    console.log('DOB: ', dob);
+    console.log('DOW:', dob.getDay());
+
+    let daysOfTheweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sarturday'];
+
+    divResult.innerHTML = 'You were born on <b>' + daysOfTheweek[dob.getDay()] + '</b>'
+        + '<br/> Your Name is <b>' + (gender == 1 ? femaleNames[dob.getDay()] : maleNames[dob.getDay()]) + '</b>';
+
+
+
 
 
 
