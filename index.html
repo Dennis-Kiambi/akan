@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akan</title>
-  <script defer src="js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -16,30 +16,35 @@
   <h2>Please input your date of birth and gender</h2>
   <div>
     <div id="error"></div>
-    <form id="form" action="/" method="GET">
+    <form id="form">
       <div id="dob">
-        <label for="dd">dd:</label><br>
-        <input type="number" id="dd" name="dd" required><br>
-        <label for="mm">mm:</label><br>
-        <input type="number" id="mm" name="mm" required><br>
-        <label for="yyyy">yyyy:</label><br>
-        <input type="number" id="yyyy" name="yyyy" required>
+        <label for="dd">DD:</label><br>
+        <input type="number" id="dd" name="dd" placeholder="Date" required><br>
+        <label for="mm">MM:</label><br>
+        <input type="number" id="mm" name="mm" placeholder="Month" required><br>
+        <label for="yyyy">YYYY:</label><br>
+        <input type="number" id="yyyy" name="yyyy" placeholder="Year" required>
 
       </div>
       <div id="sex">
         <label for="gender">Gender</label><br>
-        <input list="gender" required>
-        <datalist id="gender">
-          <option value="Female">
-          <option value="Male">
-        </datalist>
+
+        <select id="gender">
+          <option value="0">Select Gender</option>
+          <option value="1">Female</option>
+          <option value="2">Male</option>
+        </select>
       </div>
       <div id="submit">
-        <input type="submit" value="Submit">
+        <button type="button" id="btnSubmit" onclick="calculateName()">Get Name</button>
       </div>
+      <hr />
+      <h3>Results:</h3>
+      <div id="divResult"></div>
     </form>
   </div>
 
+  <script defer src="js/scripts.js"></script>
 </body>
 
 </html>
