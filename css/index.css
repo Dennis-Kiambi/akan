@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom right, #fcfafe, #e7d8f7);
+    background-image: linear-gradient(to bottom right, #fefdfa,#f1deb5);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
@@ -16,4 +16,7 @@ p{
     border-radius: 5px;   
     width: 50%;
     height: 20px;
+}
+img{
+    float: right;
 }
