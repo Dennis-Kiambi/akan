@@ -10,6 +10,18 @@ function calculateName() {
     const txtYear = document.getElementById('yyyy');
     const selectGender = document.getElementById('gender');
 
+    let day = txtDay.value;
+    let month = txtMonth.value;
+    let year = txtYear.value;
+    let gender = selectGender.value;
+
+    console.log('DAY:', day, ' MONTH: ', month, 'Year: ', year, 'Gender: ', gender);
+    errorElement.innerHTML = '';
+    divResult.innerHTML = '';
+
+
+
+
 
 }
 /*
