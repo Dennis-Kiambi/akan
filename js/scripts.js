@@ -51,7 +51,7 @@ function calculateName() {
     console.log('DOB: ', dob);
     console.log('DOW:', dob.getDay());
 
-    let daysOfTheweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sarturday'];
+    let daysOfTheweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
     divResult.innerHTML = 'You were born on <b>' + daysOfTheweek[dob.getDay()] + '</b>'
         + '<br/> Your Akan Name is <b>' + (gender == 1 ? femaleNames[dob.getDay()] : maleNames[dob.getDay()]) + '</b>';
