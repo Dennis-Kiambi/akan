@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom right, #fefdfa,#f1deb5);
+    background-image: linear-gradient(to bottom right, #f1deb5, #fcf9f2);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
@@ -17,6 +17,28 @@ p{
     width: 50%;
     height: 20px;
 }
+#error{
+    color: red;
+}
+#btnSubmit{
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #bff2f1;
+}
+#sex>select{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+}
+h1{
+    margin-top: 50px;
+}
 img{
-    float: right;
+    float: left;
+    border-radius: 10px;
+    margin-left: 300px;
+}
+h3{
+    width: 30%;
+    display: inline-block;
 }
