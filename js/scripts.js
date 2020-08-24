@@ -1,6 +1,4 @@
-
 const form = document.getElementById('form')
-
 function calculateName() {
 
     const errorElement = document.getElementById('error');
@@ -57,11 +55,4 @@ function calculateName() {
 
     divResult.innerHTML = 'You were born on <b>' + daysOfTheweek[dob.getDay()] + '</b>'
         + '<br/> Your Akan Name is <b>' + (gender == 1 ? femaleNames[dob.getDay()] : maleNames[dob.getDay()]) + '</b>';
-
-
-
-
-
-
-
 }
